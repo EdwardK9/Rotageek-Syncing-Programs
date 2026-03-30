@@ -43,7 +43,7 @@ Parses your existing monthly Screwfix Excel file.
 
 ### 3. Sync to Excel (`rotageek_to_excel.py`)
 Fetches Rotageek data and writes it into your official monthly Excel workbook.
-* **Action:** Paste credentials -> Select Excel file -> Confirm shifts.
+* **Action:** Create Excel doc, template included here. Create sheets with month names (e.g. Mar 2026). Run Script -> Paste credentials -> Select Excel file -> Confirm shifts.
 
 ---
 
