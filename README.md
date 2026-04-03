@@ -16,18 +16,37 @@ A collection of Python utilities to extract work schedules from **Rotageek** or 
 
 ---
 
-## 🔑 Setup Credentials
+## ⚡ Quick Start Guide
 
-### 1. Rotageek (For API access)
-1.  Log in to [Screwfix Rotageek](https://screwfix.rotageek.com) (Chrome/Edge).
-2.  Press **F12** -> **Network** tab and refresh the page.
-3.  Find the request named `graphql-userschedules`.
-4.  In **Request Headers**, copy the `cookie` and the `requestverificationtoken`.
+### Step 1: Get your Rotageek "Keys" (Required once per session)
+The program needs to "pretend" to be your browser to see your shifts.
+1. Log in to [Screwfix Rotageek](https://screwfix.rotageek.com).
+2. Press **F12** on your keyboard (opens Developer Tools).
+3. Click the **Network** tab at the top of that side-panel.
+4. Refresh the page (F5).
+5. In the list, find the row named `graphql-userschedules`. 
+6. Scroll down the right side to find **Request Headers**:
+   * Copy the text after `cookie:`
+   * Copy the text after `requestverificationtoken:`
 
-### 2. Google Calendar (For Direct Sync)
-1.  Go to [Google Cloud Console](https://console.cloud.google.com/).
-2.  Enable the **Google Calendar API** and create **OAuth 2.0 Client IDs** (Desktop App).
-3.  Copy the **Client ID** and **Client Secret**. The script will ask for these via popup on the first run.
+### Step 2: Run the Program
+1. Download the `.exe` from the [Releases](https://github.com/YOUR_USERNAME/rotageek-sync/releases) page.
+2. Run it and paste your keys when prompted.
+3. Select which shifts you want to keep.
+
+### Step 3: Choose your Export
+* **Google Calendar:** Sends them straight to your account (Requires a one-time API setup).
+* **Universal (.ics):** Recommended! Saves a file. Double-click it on your PC or Phone to "Add All" events.
+
+---
+
+## 🛠️ One-Time Setup for Google Direct Sync
+If you want the "One-Click to Google" feature, you need to tell Google it's okay for this app to talk to your account:
+1. Go to [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a project named "WorkSync".
+3. Enable **Google Calendar API**.
+4. Create **OAuth Client ID** (Type: Desktop App).
+5. Copy the **Client ID** and **Secret** into the app popups.
 
 ---
 
@@ -43,7 +62,7 @@ Parses your existing monthly Screwfix Excel file.
 
 ### 3. Sync to Excel (`rotageek_to_excel.py`)
 Fetches Rotageek data and writes it into your official monthly Excel workbook.
-* **Action:** Paste credentials -> Select Excel file -> Confirm shifts.
+* **Action:** Create Excel doc, template included here. Create sheets with month names (e.g. Mar 2026). Run Script -> Paste credentials -> Select Excel file -> Confirm shifts.
 
 ---
 
@@ -72,6 +91,6 @@ pip install requests pandas openpyxl ics
 pip uninstall tatsu -y
 pip install tatsu==5.7.3
 ```
-
+Or download and run the `.exe` from the [Releases](https://github.com/YOUR_USERNAME/rotageek-sync/releases) page.
 ## DISCLAIMER
 This project is an independent tool I developed for fun and is not affiliated with Rotageek or Screwfix. Use responsibly and keep your API credentials private.
