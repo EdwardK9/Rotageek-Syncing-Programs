@@ -13,6 +13,7 @@ URL = "https://screwfix.rotageek.com/api/graphql-userschedules"
 
 class ShiftSelector(tk.Toplevel):
     def __init__(self, parent, items):
+
         super().__init__(parent)
         self.title("Select Shifts to Export")
         self.geometry("450x650")
@@ -66,6 +67,13 @@ class ShiftSelector(tk.Toplevel):
                   width=15).pack(side="left", padx=5)
         tk.Button(btn_frame, text="Google CSV (.csv)", command=lambda: self.confirm("csv"), bg="#34a853", fg="white",
                   width=15).pack(side="left", padx=5)
+        help_label = tk.Label(
+            self,
+            text="💡 Pro-Tip: Uncheck any shifts you've already added manually.",
+            fg="gray",
+            font=("Arial", 8, "italic")
+        )
+        help_label.pack(pady=5)
 
     def select_all(self):
         for var, _ in self.vars: var.set(True)
@@ -86,9 +94,24 @@ class ShiftSelector(tk.Toplevel):
 def get_credentials():
     root = tk.Tk();
     root.withdraw()
-    c = simpledialog.askstring("Rotageek", "Paste Cookie:")
+    cookie_help = (
+    "Where to find this:\n"
+        "1. Login to Rotageek (Chrome/Edge).\n"
+    "2. Press F12 -> Network tab -> Refresh\n"
+    "3. Click 'graphql-userschedules'\n"
+    "4. Copy the 'cookie' from Request Headers"
+    )
+    c = simpledialog.askstring("Step 1: Rotageek Cookie", cookie_help)
     if not c: sys.exit()
-    t = simpledialog.askstring("Rotageek", "Paste Token:")
+    token_help = (
+        "Where to find this:\n"
+        "If you haven't opened it already for the cookie then:\n"
+        "1. Login to Rotageek (Chrome/Edge).\n"
+        "2. Press F12 -> Network tab -> Refresh\n"
+        "3. Click 'graphql-userschedules'\n"
+        "4. Copy the 'requestverificationtoken' from Request Headers"
+    )
+    t = simpledialog.askstring("Step 2: Rotageek Token", token_help)
     if not t: sys.exit()
     return c, t
 
