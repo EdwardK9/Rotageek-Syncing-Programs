@@ -74,9 +74,9 @@ Because Rotageek is secure, the program needs to "borrow" your login session to 
 
 4.  Select your **Export Method**:
 
-    * **Universal (.ics):** Recommended! Saves a file. Just double-click it on your PC or Phone to "Add All" events.
+    * **Universal (.ics/.csv):** Recommended! Saves a file. Just double-click it on your PC or Phone to "Add All" events.
 
-    * **Google Direct:** Sends shifts straight to your Google account (Requires a one-time API setup).
+    * **Google Direct:** Sends shifts straight to your Google account (Requires a one-time API setup). **Complex**
 
 
 
@@ -88,7 +88,7 @@ Because Rotageek is secure, the program needs to "borrow" your login session to 
 
 ### **Universal (.ics) Method:**
 
-Simply open/double-click the `.ics` file. Your device (iPhone/Mac/PC) will ask if you want to "Add All" events to your calendar.
+Simply open/double-click the `.ics` file. Your device (iPhone/Mac/PC) will ask if you want to "Add All" events to your default device calendar.
 
 
 
@@ -104,11 +104,11 @@ Simply open/double-click the `.ics` file. Your device (iPhone/Mac/PC) will ask i
 
 ## 📁 Which Tool Should I Use?
 
-| File | What it does |
-| :--- | :--- |
-| **Rotageek_to_Calendar.exe** | Takes your live Rotageek schedule and puts it in your phone/PC calendar. |
-| **Excel_to_Calendar.exe** | Scans an existing Screwfix Excel file and moves those shifts to your calendar. |
-| **Sync_to_Excel.exe** | Grabs your Rotageek schedule and writes it directly into your official Excel workbook. |
+| File | What it does | Complexity | Requirements |
+| :--- | :--- | :--- | :--- |
+| **Rotageek_to_Calendar.exe** | Takes your live Rotageek schedule and puts it in your phone/PC calendar. | **Medium** | Logged into rotageek in a browser to copy cookie & token |
+| **Excel_to_Calendar.exe** | Scans an existing Screwfix Excel file and moves those shifts to your calendar. | **Simple** | Existing excel file matching format of the example file |
+| **Sync_to_Excel.exe** | Grabs your Rotageek schedule and writes it directly into your official Excel workbook. | **Medium** | Existing excel file matching format of the example file and loggd into rotageek in a browser |
 
 ---
 
