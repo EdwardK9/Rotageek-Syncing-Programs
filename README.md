@@ -107,7 +107,7 @@ Simply open/double-click the `.ics` file. Your device (iPhone/Mac/PC) will ask i
 | File | What it does | Complexity | Requirements |
 | :--- | :--- | :--- | :--- |
 | **Rotageek_to_Calendar.exe** | Takes your live Rotageek schedule and puts it in your phone/PC calendar. | **Medium** | Logged into rotageek in a browser to copy cookie & token |
-| **Excel_to_Calendar.exe** | Scans an existing Screwfix Excel file and moves those shifts to your calendar. | **Simple** | Existing excel file matching format of the example file |
+| **Excel_to_Calendar.exe** | Scans an existing Screwfix Excel file and moves those shifts to your calendar. | **Simple** | Existing excel file matching format of the [example excel file](https://github.com/EdwardK9/Rotageek-Syncing-Programs/blob/master/Excel%20Template.xlsx) |
 | **Sync_to_Excel.exe** | Grabs your Rotageek schedule and writes it directly into your official Excel workbook. | **Medium** | Existing  matching format of the [example excel file](https://github.com/EdwardK9/Rotageek-Syncing-Programs/blob/master/Excel%20Template.xlsx) and loggd into rotageek in a browser |
 
 ---
