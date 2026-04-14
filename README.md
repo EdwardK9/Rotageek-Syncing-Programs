@@ -1,5 +1,6 @@
 # 🕒 Rotageek & Excel Sync Tools
 
+![Static Badge](https://img.shields.io/badge/Platform-Windows-blue)
 
 
 A collection of Python utilities to extract work schedules from **Rotageek** or existing **Excel** timesheets and sync them to any **Calendar App** (Google, Apple, Outlook) or your official spreadsheet.
