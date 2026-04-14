@@ -66,7 +66,7 @@ Because Rotageek is secure, the program needs to "borrow" your login session to 
 
 ### Step 2: Run the Tool
 
-1.  Download the latest `.exe` from the [Releases](https://github.com/YOUR_USERNAME/rotageek-sync/releases) page.
+1.  Download the latest `.exe` from the [Releases](https://github.com/EdwardK9/Rotageek-Syncing-Programs/releases) page.
 
 2.  Run the program and paste your **Cookie** and **Token** when prompted.
 
@@ -108,7 +108,7 @@ Simply open/double-click the `.ics` file. Your device (iPhone/Mac/PC) will ask i
 | :--- | :--- | :--- | :--- |
 | **Rotageek_to_Calendar.exe** | Takes your live Rotageek schedule and puts it in your phone/PC calendar. | **Medium** | Logged into rotageek in a browser to copy cookie & token |
 | **Excel_to_Calendar.exe** | Scans an existing Screwfix Excel file and moves those shifts to your calendar. | **Simple** | Existing excel file matching format of the example file |
-| **Sync_to_Excel.exe** | Grabs your Rotageek schedule and writes it directly into your official Excel workbook. | **Medium** | Existing excel file matching format of the example file and loggd into rotageek in a browser |
+| **Sync_to_Excel.exe** | Grabs your Rotageek schedule and writes it directly into your official Excel workbook. | **Medium** | Existing  matching format of the [example excel file](https://github.com/EdwardK9/Rotageek-Syncing-Programs/blob/master/Excel%20Template.xlsx) and loggd into rotageek in a browser |
 
 ---
 
@@ -131,12 +131,3 @@ If you want to run the `.py` files manually:
 # ⚠️ DISCLAIMER
 
 This is an independent tool developed for personal convenience and is not affiliated with Rotageek or Screwfix. Use responsibly and never share your cookie, token or API credentials.
-
-## DISCLAIMER
-
-This project is an independent tool I developed for fun and is not affiliated with Rotageek or Screwfix. Use responsibly and keep your API credentials private.
-
-
-
-
-
